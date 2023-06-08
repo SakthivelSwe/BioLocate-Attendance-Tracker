@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "832604919880",
+    "project_id": "locbatt-7da49",
+    "storage_bucket": "locbatt-7da49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832604919880:android:df024e2ae3a99c9bdb207d",
+        "android_client_info": {
+          "package_name": "com.example.locbatt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832604919880-3ns30daonpie5q1qltg4u3bv9ouijugt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4U-jY5urEVdjV3FlxaWXAfHr6tK-oLlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832604919880-3ns30daonpie5q1qltg4u3bv9ouijugt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

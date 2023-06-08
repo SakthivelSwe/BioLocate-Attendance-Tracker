@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".StudentEnroll">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hey"
+            android:layout_width="414dp"
+            android:layout_height="192dp"
+            android:background="@color/SecondaryColor"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="274dp"
+                android:layout_height="150dp"
+                android:src="@drawable/tecmanage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="#FD746C6C"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="232dp"
+            android:background="@color/ThirdColor"
+            app:itemIconTint="@drawable/colorchange"
+            app:itemTextColor="@drawable/colorchange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintVertical_bias="0.987"
+            app:menu="@menu/enroll">
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="345dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Current password"
+            android:textColorHint="#9A000000"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="266dp"
+            android:layout_height="39dp"
+            android:background="@drawable/button_background3"
+            android:text="@string/submit"
+            android:textStyle="bold"
+
+            android:textColor="@color/WhiteTextColor"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/editText4"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/editText4"
+            app:layout_constraintTop_toBottomOf="@+id/editText4"/>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="37dp"
+            android:text="Change Password??"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hey" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="345dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter New password"
+            android:inputType="textPersonName"
+            android:textColorHint="#9A000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText2"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/editText2"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="345dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Confirm password"
+            android:textColorHint="#9A000000"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="@+id/editText3"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="@+id/editText3"
+            app:layout_constraintTop_toBottomOf="@+id/editText3"
+            app:layout_constraintVertical_bias="0.076" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
